@@ -4,12 +4,27 @@ import org.springframework.validation.Errors;
 import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;
 
+/**
+ *
+ * @author usuario
+ */
 public class Clientevalidation implements Validator{
+
+    /**
+     *
+     * @param type
+     * @return
+     */
     @Override
     public boolean supports(Class<?> type) {
         return Cliente.class.isAssignableFrom(type);
     }
 
+    /**
+     *
+     * @param o
+     * @param errors
+     */
     @Override
     public void validate(Object o, Errors errors) {
         Cliente cliente = (Cliente)o;

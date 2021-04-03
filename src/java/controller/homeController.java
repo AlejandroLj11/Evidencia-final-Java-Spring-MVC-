@@ -14,15 +14,26 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.support.SessionStatus;
 import org.springframework.web.servlet.ModelAndView;
 
+/**
+ *
+ * @author usuario
+ */
 @Controller
 public class homeController {
     private JdbcTemplate jdbcTemplate;
 
+    /**
+     *
+     */
     public homeController() {
         ConectarDB con = new ConectarDB();
         this.jdbcTemplate = new JdbcTemplate(con.conectar());
     }
     
+    /**
+     *
+     * @return
+     */
     @RequestMapping(value="formCliente.htm", method=RequestMethod.GET)
     public ModelAndView home(){
         ModelAndView mav = new ModelAndView();
@@ -32,6 +43,10 @@ public class homeController {
         return mav;
     }
     
+    /**
+     *
+     * @return
+     */
     @RequestMapping(value="formCliente.htm", method=RequestMethod.POST)
     public ModelAndView mostrarCliente(){
         ModelAndView mav = new ModelAndView();
@@ -44,7 +59,12 @@ public class homeController {
         return mav;
     }
 //------------------ metodo para agregar los datos del cliente ------------------    
-    @RequestMapping(value="agregarCliente.htm", method=RequestMethod.GET)
+
+    /**
+     *
+     * @return
+     */
+        @RequestMapping(value="agregarCliente.htm", method=RequestMethod.GET)
     public ModelAndView cargarCliente(){
         ModelAndView mav = new ModelAndView();
 //        Cliente cliente = new Cliente();   
@@ -52,6 +72,12 @@ public class homeController {
         mav.setViewName("views/agregarCliente");
         return mav;
     }
+
+    /**
+     *
+     * @param cli
+     * @return
+     */
     @RequestMapping(value="agregarCliente.htm", method=RequestMethod.POST)
     public ModelAndView agregarCliente( Cliente cli){
         ModelAndView mav = new ModelAndView();
@@ -62,7 +88,13 @@ public class homeController {
         return mav;
     }
  //------------------- metodo para actualiar los datos del cliente --------------
-    @RequestMapping(value="actCliente.htm", method=RequestMethod.GET)
+
+    /**
+     *
+     * @param request
+     * @return
+     */
+        @RequestMapping(value="actCliente.htm", method=RequestMethod.GET)
     public ModelAndView actCliente(HttpServletRequest request){
         ModelAndView mav = new ModelAndView();
         int id = Integer.parseInt(request.getParameter("id"));
@@ -72,6 +104,12 @@ public class homeController {
         mav.setViewName("views/actCliente");
         return mav;
     }
+
+    /**
+     *
+     * @param cli
+     * @return
+     */
     @RequestMapping(value="actCliente.htm", method=RequestMethod.POST)
     public ModelAndView actCliente( Cliente cli ){
      ModelAndView mav = new ModelAndView();
@@ -84,7 +122,13 @@ public class homeController {
         return mav;
     }
 //------------ metodo para eliminar un campo de la tabla +---------------------
-    @RequestMapping("borrarCliente.htm")
+
+    /**
+     *
+     * @param request
+     * @return
+     */
+        @RequestMapping("borrarCliente.htm")
     public ModelAndView borrarCliente(HttpServletRequest request ){
      ModelAndView mav = new ModelAndView();
      int id = Integer.parseInt(request.getParameter("id"));
@@ -94,6 +138,10 @@ public class homeController {
         return mav;
     }
     
+    /**
+     *
+     * @return
+     */
     @RequestMapping(value="consultar_Cliente.htm", method=RequestMethod.GET)
     public ModelAndView listarclientexNombre(){
         ModelAndView mav = new ModelAndView();
@@ -102,6 +150,14 @@ public class homeController {
         mav.setViewName("views/consultar_Cliente");
         return mav;
     }
+
+    /**
+     *
+     * @param cli
+     * @param result
+     * @param status
+     * @return
+     */
     @RequestMapping(value="consultar_Cliente.htm", method=RequestMethod.POST)
     public ModelAndView listarclientexNombre(
             @ModelAttribute ("cliente")Cliente cli,

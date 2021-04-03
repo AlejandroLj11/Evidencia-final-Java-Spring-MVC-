@@ -3,7 +3,16 @@ package dao;
 
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
+/**
+ *
+ * @author usuario
+ */
 public class ConectarDB {
+
+    /**
+     *
+     * @return
+     */
     public DriverManagerDataSource conectar (){
         DriverManagerDataSource datasource = new DriverManagerDataSource();
         datasource.setDriverClassName("com.mysql.jdbc.Driver");
