@@ -40,3 +40,6 @@ div.content{
     margin:auto;
     width:30%;
 }
+body{
+    background-image: url('../imagenes/uno.jpeg');
+}
