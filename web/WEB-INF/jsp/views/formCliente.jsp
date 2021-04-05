@@ -3,7 +3,7 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@include file="cabecera.jsp" %>
-<body>
+<body style="background-color: #f8ede3">
         <h1>Ejemplo de Uso de FORMS en JSTL y JSP</h1>
         <div class="content">
             <form:form cssClass="navbar-form " method="post" commandName="cliente">
@@ -36,9 +36,6 @@
 
              </form:form>
             </div>
-        </div>
-        <div class="footer" >
-            <p>SENA 2021 @ Derechos Reservado </p>
-        </div>
+        
     </body>
 </html>

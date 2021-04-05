@@ -11,15 +11,16 @@
         <link href='<c:url value="public/css/estilos.css" />' rel="stylesheet" />
         
     </head>
-    <body>
+    <body style="background-color: #f8ede3">
         <div class="container mt-4">
             <nav>
-                <h1 style="text-align: center; background-color: blanchedalmond;">
+                <h1 style="text-align: center; background-color: #a2b29f;">
                     Conectar JSP - JSTL - JDBC</h1>
-                <ul>
-                    <li style="float:right;"><a href="index.htm">Index</a></li>
+                <ul style="background-color: #bdd2b6">
+                    <li style="float:right;"><a href="index.htm">Inicio</a></li>
                     <li><a href="formCliente.htm">Cliente</a></li>
-                    <li><a href="consultar_Cliente.htm">Visualizar Clientes</a></li>
-                    <li><a class="active" href="listar_Cliente.htm">About</a></li>
+                    <li><a href="consultar_Cliente.htm">Consultar Clientes</a></li>
+                    <li><a class="active" href="listar_Cliente.htm">Acerca de</a></li>
                 </ul>
-            </nav>            
+            </nav> 
+    </body>

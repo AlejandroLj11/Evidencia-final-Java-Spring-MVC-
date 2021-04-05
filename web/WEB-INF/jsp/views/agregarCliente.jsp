@@ -1,6 +1,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib  prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@include file="cabecera.jsp" %>
+<body style="background-color: #f8ede3">
         <div class="content">
             <div class="card border-info">
                 <div class="card header bg-info">
@@ -28,8 +29,6 @@
             </div>
         </div>
     </div>
-    <div class="footer" >
-        <p>SENA 2021 @ Derechos Reservado </p>
-    </div>
+    
     </body>
 </html>

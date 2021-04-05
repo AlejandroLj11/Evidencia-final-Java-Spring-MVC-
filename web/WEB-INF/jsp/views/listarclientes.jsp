@@ -13,7 +13,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
-    <body>
+    <body style="background-color: #f8ede3">
        <h1>Consultar Clientes...</h1>
 <div class="content">
     <form:form cssClass="navbar-form" method="post" commandName="transportista">

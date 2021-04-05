@@ -17,6 +17,7 @@
     });
 } );
 </script>
+<body style="background-color: #f8ede3">
             <h1>Coneccion a Bases de Datos MYSql</h1>
             <div class="card border-info">
                 <div class="card-header bg-info text-white">
@@ -47,6 +48,5 @@
                     </table>
                 </div>
             </div>
-        </div>
     </body>
 </html>

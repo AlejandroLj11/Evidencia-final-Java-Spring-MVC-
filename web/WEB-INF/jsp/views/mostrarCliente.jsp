@@ -1,5 +1,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@include file="cabecera.jsp" %>
+<body style="background-color: #f8ede3">
             <h1>Coneccion a Bases de Datos MYSql</h1>
             <div class="card border-info">
                 <div class="card-header bg-info text-white">
@@ -34,10 +35,7 @@
                     </table>
                 </div>
             </div>
-        </div>
-        <div class="footer" >
-            <p>SENA 2021 @ Derechos Reservado </p>
-        </div>
+      
 
     </body>
 </html>

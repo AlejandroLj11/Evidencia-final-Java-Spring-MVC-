@@ -5,7 +5,7 @@
 ul {
     list-style-type: none;   
     overflow: hidden;    
-    background-color: #f7ea00;
+    background-color: #caf7e3;
 }
 li {        
     float: left; 
@@ -16,14 +16,14 @@ li a {
     text-decoration: none;
 }
 li a:hover:not(.active) {
-    background-color: #0a0a0a;
+    background-color: #caf7e3;
     color:yellowgreen;
 }
-.active{ background-color: #4CAF50;}
+.active{ background-color: #caf7e3;}
 
 .footer{
     width:100%; float:left; 
-    background-color: black;
+    background-color: #caf7e3;
     position:fixed; bottom:0; 
     z-index:999999;
     color: gold;
@@ -41,5 +41,5 @@ div.content{
     width:30%;
 }
 body{
-    background-image: url('../imagenes/uno.jpeg');
+    background-color: #caf7e3;
 }
